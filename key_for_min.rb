@@ -4,7 +4,7 @@
 require 'pry'
 
 def key_for_min_value(name_hash)
-  name.hash.collect {|key, value| value}
+  name_hash.collect {|key, value| value}
   value.sort {|a,b| a<=>b} 
   binding.pry 
   value[0]
